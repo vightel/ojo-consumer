@@ -185,7 +185,7 @@ exports.opensearch = function(req, res){
 	url += "&limit="+limit;
 	url += "&sources="+sources;
 	
-	console.log(url)
+	console.log("URL:", url)
 	
     var header = Hawk.client.header(url, 'GET', { credentials: credentials, ext: email });
     var options = {

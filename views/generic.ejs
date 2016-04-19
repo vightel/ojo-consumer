@@ -11,6 +11,8 @@
 		<div id='legends' class='row'>
 		</div>
 </div>
+<br/>
+<div class='container' id='featuresId' style="display:none"></div>
 
 <!--
 <script src="http://d3js.org/topojson.v1.min.js"></script>
@@ -99,7 +101,7 @@
 						if( use['mediaType'] == 'application/json' ) {
 							topojson_url = use['url']
 							console.log("json", topojson_url)
-						} else if( (use['mediaType'] == 'application/gzip') && (use['url'].indexOf("json.gz") > 0) ) {
+						} else if( (use['mediaType'] == 'application/x-gzip') && (use['url'].indexOf("json.gz") > 0) ) {
 							topojson_url = use['url']
 							console.log("use ...json.gz", topojson_url)
 							break;
@@ -116,7 +118,7 @@
 		
 			if(topojson_url) {
 				console.log("loadData", topojson_url)
-				loadData( topojson_url, id, mapinfos );
+				loadData( topojson_url, id, mapinfos, null, 'featuresId' );
 			} else {
 				console.log("Could not find topojson_url")
 			}

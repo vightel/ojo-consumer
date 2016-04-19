@@ -1,12 +1,12 @@
 {
     "name": "ojo-consumer",
     "description": "OJO Publisher Component of the NASA Disaster Architecture Implementation",
-	"version": "0.0.1"
-	"private": true,
+	"version": "0.0.1",
+	"private": false,
 	"main": "server.js",
 	"author": {
 		"name": "Patrice Cappelaere",
-		"email": "pat@cappelaere.com",
+		"email": "pat@cappelaere.com"
 	},
   "license": "Apache-2.0",
   "dependencies": {
